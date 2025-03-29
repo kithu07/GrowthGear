@@ -4,7 +4,7 @@
 *Developed as part of my Frontend Engineer internship task at Growth Gear*  
 
 # Live Demo
-Open [http://localhost:3000](http://localhost:3000) in your browser  
+Open [https://growth-gear-ecru.vercel.app/](https://growth-gear-ecru.vercel.app/) in your browser  
 
 ## ✨ Features  
 
