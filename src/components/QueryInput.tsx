@@ -27,7 +27,7 @@ const QueryInput: React.FC = () => {
     try {
       // Simulated API call with more realistic data
       const mockData = Array.from({ length: 12 }, (_, i) => ({
-        month: new Date(2024, i).toLocaleString('default', { month: 'short' }),
+        month: new Date(2025, i).toLocaleString('default', { month: 'short' }),
         value: Math.floor(Math.random() * 100) + 50
       }));
       
@@ -77,8 +77,6 @@ const QueryInput: React.FC = () => {
             className="w-full pl-12 pr-12 py-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-lg hover:shadow-xl"
           />
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
             type="submit"
             className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
           >
@@ -106,7 +104,7 @@ const QueryInput: React.FC = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: index * 0.1 }}
                     onClick={() => handleSuggestionClick(suggestion)}
-                    className="px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg cursor-pointer transition-colors"
+                    className="px-3 py-2 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg cursor-pointer transition-colors"
                   >
                     {suggestion}
                   </motion.div>

@@ -15,7 +15,7 @@ const QueryHistory: React.FC = () => {
     >
       <div className="flex items-center mb-4">
         <Clock className="text-blue-500 mr-2" />
-        <h2 className="text-xl font-semibold">Query History</h2>
+        <h2 className="text-xl dark:text-white font-semibold">Query History</h2>
       </div>
       <div className="space-y-2">
         {history.map((query, index) => (
