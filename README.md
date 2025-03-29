@@ -33,7 +33,7 @@ Open [https://growth-gear-ecru.vercel.app/](https://growth-gear-ecru.vercel.app/
 
 1. Clone the repository:  
    ```bash
-   git clone [https://github.com/kithu07/GrowthGear.git]
+   git clone "https://github.com/kithu07/GrowthGear.git"
    ```
 
 2. Install dependencies:  
