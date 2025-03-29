@@ -67,14 +67,14 @@ const QueryInput: React.FC = () => {
     >
       <form onSubmit={handleSubmit} className="relative">
         <div className="relative">
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 " />
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onFocus={() => setShowSuggestions(true)}
             placeholder="Ask anything about your data..."
-            className="w-full pl-12 pr-12 py-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-lg hover:shadow-xl"
+            className="w-full pl-12 pr-12 py-4 rounded-xl dark:text-white bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-lg hover:shadow-xl"
           />
           <motion.button
             type="submit"

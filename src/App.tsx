@@ -27,15 +27,6 @@ const ProgressBar = () => {
   );
 };
 
-const GlowLine = () => {
-  return (
-    <div className="fixed left-5 top-0 h-full w-1 md:w-2 z-20">
-      <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-blue-500 to-violet-600 shadow-[0_0_20px_5px_rgba(59,130,246,0.5)]"></div>
-      <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-blue-500/30 to-violet-600/30 shadow-[0_0_40px_10px_rgba(124,58,237,0.3)] animate-pulse"></div>
-    </div>
-  );
-};
-
 const DashboardContent = () => {
   const isDarkMode = useSelector((state: RootState) => state.theme.darkMode);
 
@@ -92,10 +83,9 @@ const DashboardContent = () => {
     </div>
   
     {/* Content container with higher z-index */}
-    <div className="relative z-10">
+    <div className="relative z-10 my-7">
     
       <ProgressBar />
-      <GlowLine />
       <Navbar />
       <ThemeToggle />
       
