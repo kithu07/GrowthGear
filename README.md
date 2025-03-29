@@ -29,6 +29,11 @@ Open [https://growth-gear-ecru.vercel.app/](https://growth-gear-ecru.vercel.app/
 - **State Management**: Redux Toolkit  
 - **Icons**: Lucide React  
 
+## Screenshots
+
+![Dashboard Light Mode](./images/SS2.png)
+![Dashboard Dark Mode](./images/SS1.png)
+
 ## 🚀 Getting Started  
 
 1. Clone the repository:  
