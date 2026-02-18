@@ -1,0 +1,17 @@
+name: CI Pipeline
+'on':
+- push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      run: npm install
+    - name: Run Tests (optional)
+      run: "if npm run 2>&1 | grep -q \"test\"; then\n  npm test\nelse\n  echo \"\
+        No test script found, skipping tests\"\nfi"
